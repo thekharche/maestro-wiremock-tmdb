@@ -1,0 +1,175 @@
+{
+  "uuid": "4fd62dc4-e65b-4e51-93e4-37e39aae5426",
+  "lastMigration": 27,
+  "name": "Mock TMDB",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "56bb5776-453b-43df-9b5d-3a2559808957",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "",
+      "responses": [
+        {
+          "uuid": "6333712f-2e8c-4ae0-b1e5-902d2f64bd20",
+          "body": "{\n    \"status_code\": 7,\n    \"status_message\": \"Invalid API key: You must be granted a valid key.\",\n    \"success\": false\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Base URL route",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "92bbe792-5ef3-45cc-9ea4-7124ee5b05c9",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "movie/now_playing",
+      "responses": [
+        {
+          "uuid": "cc03b845-2cdd-43c3-95f9-cbd1f6f523af",
+          "body": "{\n  \"dates\": {\n    \"maximum\": \"2023-06-03\",\n    \"minimum\": \"2023-04-16\"\n  },\n  \"page\": 1,\n  \"results\": [\n    {\n      \"adult\": false,\n      \"backdrop_path\": \"/u4SDPknBWEEOCzPJvL0NwApkQSR.jpg\",\n      \"genre_ids\": [\n        16,\n        10751,\n        12,\n        14,\n        35\n      ],\n      \"id\": 502356,\n      \"original_language\": \"en\",\n      \"original_title\": \"Mockoon Mario! - Original Title\",\n      \"overview\": \"While working underground to fix a water main, Brooklyn plumbers—and brothers—Mario and Luigi are transported down a mysterious pipe and wander into a magical new world. But when the brothers are separated, Mario embarks on an epic quest to find Luigi.\",\n      \"popularity\": 5368.542,\n      \"poster_path\": \"/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg\",\n      \"release_date\": \"2023-04-05\",\n      \"title\": \"Mockoon Mario! - Title\",\n      \"video\": false,\n      \"vote_average\": 7.8,\n      \"vote_count\": 4117\n    },\n    {\n      \"adult\": false,\n      \"backdrop_path\": \"/4t0oBFrJyweYPt0hocW6RUa0b6H.jpg\",\n      \"genre_ids\": [\n        28,\n        80,\n        53\n      ],\n      \"id\": 385687,\n      \"original_language\": \"en\",\n      \"original_title\": \"Fast X\",\n      \"overview\": \"Over many missions and against impossible odds, Dom Toretto and his family have outsmarted, out-nerved and outdriven every foe in their path. Now, they confront the most lethal opponent they've ever faced: A terrifying threat emerging from the shadows of the past who's fueled by blood revenge, and who is determined to shatter this family and destroy everything—and everyone—that Dom loves, forever.\",\n      \"popularity\": 3421.016,\n      \"poster_path\": \"/1E5baAaEse26fej7uHcjOgEE2t2.jpg\",\n      \"release_date\": \"2023-05-17\",\n      \"title\": \"Fast X\",\n      \"video\": false,\n      \"vote_average\": 7,\n      \"vote_count\": 780\n    },\n    {\n      \"adult\": false,\n      \"backdrop_path\": \"/qAfGVKCOg1ueNFOA9KL85lo9zox.jpg\",\n      \"genre_ids\": [\n        10749,\n        18,\n        35\n      ],\n      \"id\": 1016121,\n      \"original_language\": \"en\",\n      \"original_title\": \"Beautiful Disaster\",\n      \"overview\": \"Bad-boy Travis is exactly what college freshman Abby needs and wants to avoid. He spends his nights fighting in underground boxing matches, and his days as the ultimate college campus charmer. But Abby wants nothing to do with Travis. Intrigued by Abby’s resistance, Travis offers her a simple bet: if he loses his next fight, he must remain sex-free for a month. If he wins, Abby must live in his apartment for the same amount of time. Either way, Travis has no idea that Abby’s dark past is about to emerge, and he may have finally met his match.\",\n      \"popularity\": 368.223,\n      \"poster_path\": \"/bwdLflvCcOCRPqb1x13KPuYIzVx.jpg\",\n      \"release_date\": \"2023-04-04\",\n      \"title\": \"Beautiful Disaster\",\n      \"video\": false,\n      \"vote_average\": 6.2,\n      \"vote_count\": 215\n    }\n  ],\n  \"total_pages\": 2,\n  \"total_results\": 9\n}",
+          "latency": 5000,
+          "statusCode": 200,
+          "label": "Now Playing",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        },
+        {
+          "uuid": "95517723-ab52-4564-8ae7-cf0b435e9a5a",
+          "body": "{\n  \"dates\": {\n    \"maximum\": \"2023-06-03\",\n    \"minimum\": \"2023-04-16\"\n  },\n  \"page\": 2,\n  \"results\": [\n\n    {\n      \"adult\": false,\n      \"backdrop_path\": \"/eTvN54pd83TrSEOz6wbsXEJktCV.jpg\",\n      \"genre_ids\": [\n        10752,\n        28,\n        53\n      ],\n      \"id\": 882569,\n      \"original_language\": \"en\",\n      \"original_title\": \"Guy Ritchie's The Covenant\",\n      \"overview\": \"During the war in Afghanistan, a local interpreter risks his own life to carry an injured sergeant across miles of grueling terrain.\",\n      \"popularity\": 1541.629,\n      \"poster_path\": \"/kVG8zFFYrpyYLoHChuEeOGAd6Ru.jpg\",\n      \"release_date\": \"2023-04-19\",\n      \"title\": \"Guy Ritchie's The Covenant\",\n      \"video\": false,\n      \"vote_average\": 7.6,\n      \"vote_count\": 440\n    },\n    {\n      \"adult\": false,\n      \"backdrop_path\": \"/kyeqDT2cFhTmwlvtuQY3n2W6Vf3.jpg\",\n      \"genre_ids\": [\n        28,\n        53,\n        27\n      ],\n      \"id\": 799379,\n      \"original_language\": \"ko\",\n      \"original_title\": \"늑대사냥\",\n      \"overview\": \"While under heavily armed guard, the dangerous convicts aboard a cargo ship unite in a coordinated escape attempt that soon escalates into a bloody, all-out riot. But as the fugitives continue their brutal campaign of terror, they soon discover that not even the most vicious among them is safe from the horror they unknowingly unleashed from the darkness below deck.\",\n      \"popularity\": 1374.848,\n      \"poster_path\": \"/dniWicB6fa7NvpGbguxWlNPMc5f.jpg\",\n      \"release_date\": \"2022-09-21\",\n      \"title\": \"Project Wolf Hunting\",\n      \"video\": false,\n      \"vote_average\": 6.4,\n      \"vote_count\": 149\n    },\n    {\n      \"adult\": false,\n      \"backdrop_path\": \"/hiHGRbyTcbZoLsYYkO4QiCLYe34.jpg\",\n      \"genre_ids\": [\n        27,\n        53\n      ],\n      \"id\": 758323,\n      \"original_language\": \"en\",\n      \"original_title\": \"The Pope's Exorcist\",\n      \"overview\": \"Father Gabriele Amorth, Chief Exorcist of the Vatican, investigates a young boy's terrifying possession and ends up uncovering a centuries-old conspiracy the Vatican has desperately tried to keep hidden.\",\n      \"popularity\": 1345.099,\n      \"poster_path\": \"/gNPqcv1tAifbN7PRNgqpzY8sEJZ.jpg\",\n      \"release_date\": \"2023-04-05\",\n      \"title\": \"The Pope's Exorcist\",\n      \"video\": false,\n      \"vote_average\": 7.3,\n      \"vote_count\": 1300\n    },\n    {\n      \"adult\": false,\n      \"backdrop_path\": \"/i1eghEBiC0gN4KnwuUGC2fNiX1f.jpg\",\n      \"genre_ids\": [\n        28,\n        53\n      ],\n      \"id\": 552688,\n      \"original_language\": \"en\",\n      \"original_title\": \"The Mother\",\n      \"overview\": \"A deadly female assassin comes out of hiding to protect the daughter that she gave up years before, while on the run from dangerous men.\",\n      \"popularity\": 1221.109,\n      \"poster_path\": \"/vnRthEZz16Q9VWcP5homkHxyHoy.jpg\",\n      \"release_date\": \"2023-05-04\",\n      \"title\": \"The Mother\",\n      \"video\": false,\n      \"vote_average\": 6.8,\n      \"vote_count\": 697\n    },\n    {\n      \"adult\": false,\n      \"backdrop_path\": \"/jAmmb9RApuRckDJtYWeOgBUgQyG.jpg\",\n      \"genre_ids\": [\n        16,\n        28,\n        14,\n        878\n      ],\n      \"id\": 893712,\n      \"original_language\": \"ja\",\n      \"original_title\": \"劇場版 ソードアート・オンライン -プログレッシブ- 冥き夕闇のスケルツォ\",\n      \"overview\": \"Over a month has passed since 10,000 users were trapped inside the \\\"Sword Art Online\\\" world. Asuna, who cleared the first floor of the floating iron castle of Aincrad, joined up with Kirito and continued her journey to reach the top floor. With the support of female Information Broker Argo, clearing the floors seemed to be progressing smoothly, but conflict erupts between two major guilds who should be working together – the top player groups ALS (the Aincrad Liberation Squad) and DKB (the Dragon Knights Brigade). And meanwhile, behind the scenes exists a mysterious figure pulling the strings…\",\n      \"popularity\": 864.224,\n      \"poster_path\": \"/2lEyzOq6ILNgBpLLpTRckQhbNNt.jpg\",\n      \"release_date\": \"2022-10-22\",\n      \"title\": \"Sword Art Online the Movie -Progressive- Scherzo of Deep Night\",\n      \"video\": false,\n      \"vote_average\": 7.7,\n      \"vote_count\": 49\n    },\n    {\n      \"adult\": false,\n      \"backdrop_path\": \"/qElNES0sHVQcbzvGrTx7ccpGzij.jpg\",\n      \"genre_ids\": [\n        878,\n        28,\n        18\n      ],\n      \"id\": 842675,\n      \"original_language\": \"zh\",\n      \"original_title\": \"流浪地球2\",\n      \"overview\": \"A prequel to The Wandering Earth.\",\n      \"popularity\": 818.388,\n      \"poster_path\": \"/pR858ihc6Ls9xohpdRJVjV787ml.jpg\",\n      \"release_date\": \"2023-01-22\",\n      \"title\": \"The Wandering Earth II\",\n      \"video\": false,\n      \"vote_average\": 7.3,\n      \"vote_count\": 248\n    }\n  ],\n  \"total_pages\": 2,\n  \"total_results\": 9\n}",
+          "latency": 5000,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "page",
+              "value": "2",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "6738441f-545d-4b77-9aaa-797842ceec49",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "movie/top_rated",
+      "responses": [
+        {
+          "uuid": "3229a2f2-fbaf-412a-a2c3-b8e44578d193",
+          "body": "{\n  \"success\": false,\n  \"status_code\": 34,\n  \"status_message\": \"The resource you requested could not be found.\"\n}",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "Top Rated",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "",
+              "value": "",
+              "invert": false,
+              "operator": "regex_i"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "56bb5776-453b-43df-9b5d-3a2559808957"
+    },
+    {
+      "type": "route",
+      "uuid": "92bbe792-5ef3-45cc-9ea4-7124ee5b05c9"
+    },
+    {
+      "type": "route",
+      "uuid": "6738441f-545d-4b77-9aaa-797842ceec49"
+    }
+  ],
+  "proxyMode": true,
+  "proxyHost": "https://api.themoviedb.org/3/",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
