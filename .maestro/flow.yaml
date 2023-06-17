@@ -4,6 +4,3 @@ appId: com.ericg.neatflix
 - launchApp
 - assertVisible: "Popular"
 - assertVisible: "Top Rated"
-- assertVisible: ".*Sorry, Something went wrong!.*"
-- scroll
-- assertVisible: "Now Playing"

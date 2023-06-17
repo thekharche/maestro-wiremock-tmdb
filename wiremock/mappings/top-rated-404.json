@@ -1,0 +1,15 @@
+{
+    "request": {
+      "method": "GET",
+      "urlPathPattern": "/movie/top_rated"
+    },
+    "response": {
+      "status": 404,
+      "jsonBody": {
+        "status_code": 34,
+        "status_message": "The resource you requested could not be found.",
+        "success": false
+      }
+    }
+  }
+  
